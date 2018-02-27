@@ -1,0 +1,17 @@
+.container {
+    margin-top: 40px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+/* Hover animations */
+
+.expand {
+    transition: all .2s ease-in-out;
+}
+
+.expand:hover {
+    transform: scale(1.1);
+}
