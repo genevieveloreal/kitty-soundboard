@@ -1,17 +1,50 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+}
+
 .container {
     margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
 }
 
 .center-content {
     text-align: center;
 }
 
-/* Hover animations */
+/* Animations */
 
 .expand {
     transition: all .2s ease-in-out;
 }
 
 .expand:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
+}
+
+.shakey:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transition: all .2s ease-in;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0) scale(1.05);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0) scale(1.1);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0) scale(1.1);
+  }
 }
