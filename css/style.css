@@ -1,16 +1,32 @@
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/bg.jpg");
     background-repeat: repeat;
 }
 
 .container {
-    margin-top: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
     padding: 20px;
+}
+
+.container img {
+    max-width: 100%;
 }
 
 .center-content {
     text-align: center;
+}
+
+.container img.header {
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+button {
+    background-color: #fff;
 }
 
 /* Animations */
@@ -47,4 +63,14 @@ body {
   40%, 60% {
     transform: translate3d(4px, 0, 0) scale(1.1);
   }
+}
+
+h4 {
+    color: #fff;
+}
+
+@media (min-width: 1000px) {
+    .container img {
+        max-width: 200px;
+    }
 }
